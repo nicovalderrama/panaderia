@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería el Maná</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/panaderia-logo.png" alt="logo de panadería el maná" width="100px">
+        <nav>
+            <ul>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Sobre nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Iniciar sesión</a></li>
+                <li><a href="">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3>Agregar un Producto</h3>
+        <form action="">
+            <fieldset>
+                <legend>Información del producto</legend>
+                <label for="nombre_producto">Nombre del producto:</label>
+                <input type="text" name="nombre_producto">
+                <br>
+                <label for="id_producto">Identificación del producto:</label>
+                <input type="text" name="id_producto">
+                <br>
+                <label for="categoria_producto">Seleccione la categoría del producto:</label>
+                <select name="categoria_producto">
+                    <option value="panificacion">Panificación</option>
+                    <option value="pasteleria">Pastelería</option>
+                </select>
+                <br>
+                <label for="precio_producto">Precio del producto:</label>
+                <input type="number" name="precio_producto" min="1">
+                <br>
+                <label for="stock_producto">Cantidad para la venta del producto:</label>
+                <input type="number" name="stock_producto">
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
