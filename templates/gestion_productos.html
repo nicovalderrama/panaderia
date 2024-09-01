@@ -5,102 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panadería el Maná</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="/css/estilos.css" />
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
   </head>
 
-  <body>
+  <body class="grid grid-rows-[auto-1fr-auto] min-h-screen bg-[#ebc68e]">
     <header>
       <nav
-        class="marron-oscuro flex items-center justify-between font-lora text-white py-1 px-1"
+        class="flex items-center justify-between px-1 py-1 pl-4 pr-4 text-white marron-oscuro font-lora"
       >
         <div>
           <ul class="flex">
-            <li class="pr-1"><a href="">Productos</a></li>
-            <li class="pr-1"><a href="">Sobre nosotros</a></li>
-            <li class="pr-1"><a href="">Contacto</a></li>
+            <li class="mr-3 hover:underline">
+              <a href="">Productos</a>
+            </li>
+            <li class="mr-3 hover:underline">
+              <a href="">Sobre nosotros</a>
+            </li>
+            <li class="mr-1 hover:underline">
+              <a href="">Contacto</a>
+            </li>
           </ul>
         </div>
         <div>
-          <img
-            src="img/logo-claro-elmana.png"
-            alt="logo de panadería el maná"
-            width="80px"
-            class="rounded-full"
-          />
+          <a href="index.html">
+            <img
+              src="/img/logo-claro-elmana.png"
+              alt="logo de panadería el maná"
+              width="80px"
+              class="rounded-full"
+            />
+          </a>
         </div>
         <div>
           <ul class="flex">
-            <li class="pr-1"><a href="">Iniciar sesión</a></li>
-            <li><a href="">Registrarse</a></li>
+            <li class="mr-3 hover:underline">
+              <a href="">Iniciar sesión</a>
+            </li>
+            <li class="hover:underline">
+              <a href="">Registrarse</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="text-black">
-      <h2>Gestión de productos</h2>
-      <table class="table-auto">
-        <tr>
-          <th>Producto</th>
-          <th>ID</th>
-          <th>Descripción</th>
-          <th>Precio</th>
-          <th>Stock</th>
-          <th>Editar</th>
-          <th>Eliminar</th>
-        </tr>
-        <tr>
-          <td>Medialunas</td>
-          <td>1</td>
-          <td>
-            Las medialunas de manteca son uno de nuestros clásicos favoritos.
-            Están horneadas a la perfección con la mejor manteca. Son ideales
-            para acompañar un café o té, y siempre están frescas y listas para
-            disfrutar en cualquier momento del día.
-          </td>
-          <td>500</td>
-          <td>2000</td>
-          <td><button>Editar</button></td>
-          <td><button>Eliminar</button></td>
-        </tr>
-        <tr>
-          <td>Baguette</td>
-          <td>2</td>
-          <td>
-            Nuestra baguette es una delicia crujiente por fuera y tierna por
-            dentro. Con una corteza dorada y un sabor auténtico, es perfecta
-            para acompañar cualquier comida o para disfrutar sola. Hecha con
-            ingredientes de la mejor calidad, es un clásico de la panadería que
-            nunca pasa de moda.
-          </td>
-          <td>100</td>
-          <td>3000</td>
-          <td><button>Editar</button></td>
-          <td><button>Eliminar</button></td>
-        </tr>
-        <tr>
-          <td>Budín de chocolate</td>
-          <td>3</td>
-          <td>
-            Nuestro budín de chocolate es una delicia irresistible, con una
-            textura suave y esponjosa que se deshace en la boca. Hecho con cacao
-            de alta calidad y trozos de chocolate, ofrece un sabor profundo y
-            rico que complace a los amantes del chocolate. Ideal para disfrutar
-            como postre o en cualquier momento que necesites un capricho dulce.
-          </td>
-          <td>600</td>
-          <td>200</td>
-          <td><button>Editar</button></td>
-          <td><button>Eliminar</button></td>
-        </tr>
+    <main
+      class="container mx-auto max-w-[80%] marron-principal px-5 rounded mt-5 mb-5"
+    >
+      <h2 class="p-3 text-xl">Gestión de productos</h2>
+      <table class="w-full mb-3 text-center border-collapse table-auto">
+        <thead class="text-white bg-marron-oscuro">
+          <tr>
+            <th>Producto</th>
+            <th>ID</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="transition duration-300 hover:bg-[#8b563b]">
+            <td>Medialunas</td>
+            <td>1</td>
+            <td>
+              Las medialunas de manteca son uno de nuestros clásicos favoritos.
+              Están horneadas a la perfección con la mejor manteca. Son ideales
+              para acompañar un café o té, y siempre están frescas y listas para
+              disfrutar en cualquier momento del día.
+            </td>
+            <td>500</td>
+            <td>2000</td>
+            <td>
+              <button
+                class="px-3 py-1 text-white border rounded marron-principal hover:bg-[#5c3826]"
+              >
+                Editar
+              </button>
+            </td>
+            <td class="text-center">
+              <button
+                class="px-3 py-1 text-white bg-red-500 border rounded hover:bg-red-700"
+              >
+                Eliminar
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Baguette</td>
+            <td>2</td>
+            <td>
+              Nuestra baguette es una delicia crujiente por fuera y tierna por
+              dentro. Con una corteza dorada y un sabor auténtico, es perfecta
+              para acompañar cualquier comida o para disfrutar sola. Hecha con
+              ingredientes de la mejor calidad, es un clásico de la panadería
+              que nunca pasa de moda.
+            </td>
+            <td>100</td>
+            <td>3000</td>
+            <td>
+              <button
+                class="px-3 py-1 text-white border rounded marron-principal hover:bg-[#5c3826]"
+              >
+                Editar
+              </button>
+            </td>
+            <td class="text-center">
+              <button
+                class="px-3 py-1 text-white bg-red-500 border rounded hover:bg-red-700"
+              >
+                Eliminar
+              </button>
+            </td>
+          </tr>
+          <tr></tr>
+          <tr>
+            <td>Budín de chocolate</td>
+            <td>3</td>
+            <td>
+              Nuestro budín de chocolate es una delicia irresistible, con una
+              textura suave y esponjosa que se deshace en la boca. Hecho con
+              cacao de alta calidad y trozos de chocolate, ofrece un sabor
+              profundo y rico que complace a los amantes del chocolate. Ideal
+              para disfrutar como postre o en cualquier momento que necesites un
+              capricho dulce.
+            </td>
+            <td>600</td>
+            <td>200</td>
+            <td>
+              <button
+                class="px-3 py-1 text-white border rounded marron-principal hover:bg-[#5c3826]"
+              >
+                Editar
+              </button>
+            </td>
+            <td>
+              <button
+                class="px-3 py-1 text-white bg-red-500 border rounded hover:bg-red-700"
+              >
+                Eliminar
+              </button>
+            </td>
+          </tr>
+        </tbody>
         <tfoot>
-          <td><button>Agregar producto</button></td>
+          <tr>
+            <td colspan="7" class="text-center border border-marron-principal">
+              <button
+                class="px-4 py-2 text-white border rounded marron-oscuro hover:bg-[#5c3826]"
+              >
+                Agregar producto
+              </button>
+            </td>
+          </tr>
         </tfoot>
       </table>
     </main>
-    <footer class="marron-oscuro flex items-center py-2 justify-around">
+    <footer class="flex items-center justify-around py-2 marron-oscuro">
       <section>
-        <h2 class="font-semibold text-lg">Contacto</h2>
+        <h2 class="text-lg font-semibold">Contacto</h2>
         <div class="flex items-center">
           <ion-icon name="call-outline" class="pr-2"></ion-icon>
           <p>3834-123123</p>
@@ -116,17 +180,17 @@
       </section>
 
       <section>
-        <h2 class="font-semibold text-lg">Seguinos en nuestras redes</h2>
+        <h2 class="text-lg font-semibold">Seguinos en nuestras redes</h2>
         <ul>
           <li>
             <a href="#" target="_blank">Facebook</a>
-            <ion-icon name="logo-facebook" class="align-middle p-2"></ion-icon>
+            <ion-icon name="logo-facebook" class="p-2 align-middle"></ion-icon>
           </li>
           <li>
             <a href="#" target="_blank">Instagram</a
             ><ion-icon
               name="logo-instagram"
-              class="align-middle p-2"
+              class="p-2 align-middle"
             ></ion-icon>
           </li>
         </ul>
