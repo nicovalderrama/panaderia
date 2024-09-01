@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="/css/estilos.css" />
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
     <title>Panaderia el Maná</title>
   </head>
@@ -12,7 +12,7 @@
   <body>
     <header>
       <nav
-        class="marron-oscuro flex items-center justify-between font-lora text-white py-1 px-1"
+        class="flex items-center justify-between px-1 py-1 text-white marron-oscuro font-lora"
       >
         <div>
           <ul class="flex">
@@ -29,7 +29,7 @@
         </div>
         <div>
           <img
-            src="img/logo-claro-elmana.png"
+            src="/img/logo-claro-elmana.png"
             alt="logo de panadería el maná"
             width="80px"
             class="rounded-full"
@@ -47,8 +47,8 @@
       <article
         class="flex items-center bg-[#ab9680] pl-3 pt-3 pr-3 min-h-[90vh]"
       >
-        <div class="w-1/2 marron-oscuro rounded p-10">
-          <h2 class="text-black font-bold text-3xl text-center">
+        <div class="w-1/2 p-10 rounded">
+          <h2 class="text-3xl font-bold text-center text-black">
             Bienvenido a panaderia el Maná
           </h2>
           <p class="text-black">
@@ -58,18 +58,18 @@
             siempre productos frescos y de la más alta calidad
           </p>
         </div>
-        <img src="img/panaderia-horno.jpg" alt="" class="w-1/2 rounded-lg" />
+        <img src="/img/panaderia-horno.jpg" alt="" class="w-1/2 rounded-lg" />
       </article>
-      <h1 class="font-kindred py-12 text-3xl text-center">
+      <h1 class="py-12 text-3xl text-center font-kindred">
         La mejor panadería de Catamarca
       </h1>
-      <h2 class="font-semibold text-xl mt-3 ml-5">
+      <h2 class="mt-3 ml-5 text-xl font-semibold">
         Nuestros exquisitos productos destacados
       </h2>
       <section class="flex">
-        <article class="card shadow-2xl">
-          <img src="img/medialunas.jpg" alt="Medialunas" class="w-50" />
-          <h3 class="m-4 text-center font-kindred text-xl">
+        <article class="shadow-2xl card">
+          <img src="/img/medialunas.jpg" alt="Medialunas" class="w-50" />
+          <h3 class="m-4 text-xl text-center font-kindred">
             Medialunas de manteca
           </h3>
           <p>
@@ -80,9 +80,9 @@
           </p>
           <a href="#" class="underline">Más información</a>
         </article>
-        <article class="card shadow-2xl">
-          <img src="img/baguette.jpg" alt="Baguette" class="w-50" />
-          <h3 class="m-4 text-center font-kindred text-xl">Baguette</h3>
+        <article class="shadow-2xl card">
+          <img src="/img/baguette.jpg" alt="Baguette" class="w-50" />
+          <h3 class="m-4 text-xl text-center font-kindred">Baguette</h3>
           <p>
             Nuestra baguette es una delicia crujiente por fuera y tierna por
             dentro. Con una corteza dorada y un sabor auténtico, es perfecta
@@ -92,9 +92,9 @@
           </p>
           <a href="#" class="underline">Más información</a>
         </article>
-        <article class="card shadow-2xl">
-          <img src="img/budin.jpg" alt="Budín de chocolate" class="w-50" />
-          <h3 class="m-4 text-center font-kindred text-xl">
+        <article class="shadow-2xl card">
+          <img src="/img/budin.jpg" alt="Budín de chocolate" class="w-50" />
+          <h3 class="m-4 text-xl text-center font-kindred">
             Budín de chocolate
           </h3>
           <p>
@@ -107,9 +107,9 @@
         </article>
       </section>
     </main>
-    <footer class="marron-oscuro flex items-center py-2 justify-around">
+    <footer class="flex items-center justify-around py-2 marron-oscuro">
       <section>
-        <h2 class="font-semibold text-lg">Contacto</h2>
+        <h2 class="text-lg font-semibold">Contacto</h2>
         <div class="flex items-center">
           <ion-icon name="call-outline" class="pr-2"></ion-icon>
           <p>3834-123123</p>
@@ -125,17 +125,17 @@
       </section>
 
       <section>
-        <h2 class="font-semibold text-lg">Seguinos en nuestras redes</h2>
+        <h2 class="text-lg font-semibold">Seguinos en nuestras redes</h2>
         <ul>
           <li>
             <a href="#" target="_blank">Facebook</a>
-            <ion-icon name="logo-facebook" class="align-middle p-2"></ion-icon>
+            <ion-icon name="logo-facebook" class="p-2 align-middle"></ion-icon>
           </li>
           <li>
             <a href="#" target="_blank">Instagram</a
             ><ion-icon
               name="logo-instagram"
-              class="align-middle p-2"
+              class="p-2 align-middle"
             ></ion-icon>
           </li>
         </ul>
