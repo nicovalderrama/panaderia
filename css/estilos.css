@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "kindred";
+  src: url("/fonts/kingred.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.marron-claro {
+  background-color: #ab9680;
+}
+
+.marron-oscuro {
+  background-color: #8b563b;
+}
+
+.marron-principal {
+  background-color: #735945;
+}
+.font-kindred {
+  font-family: "kindred", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2,
+h3 {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.card {
+  background-color: #ab9680;
+  border-radius: 30px;
+  width: 20%;
+  padding: 20px;
+  margin: 20px;
+}

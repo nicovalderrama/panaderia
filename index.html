@@ -1,83 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
     <title>Panaderia el Maná</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <img src="img/panaderia-logo.png" alt="logo de panadería el maná" width="100px">
-        <nav>
-            <ul>
-                <li><a href="">Productos</a></li>
-                <li><a href="">Sobre nosotros</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Iniciar sesión</a></li>
-                <li><a href="">Registrarse</a></li>
-            </ul>
-        </nav>
+      <nav
+        class="marron-oscuro flex items-center justify-between font-lora text-white py-1 px-1"
+      >
+        <div>
+          <ul class="flex">
+            <li class="pr-1">
+              <a href="" class="hover:underline">Productos</a>
+            </li>
+            <li class="pr-1">
+              <a href="" class="hover:underline">Sobre nosotros</a>
+            </li>
+            <li class="pr-1">
+              <a href="" class="hover:underline">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="img/logo-claro-elmana.png"
+            alt="logo de panadería el maná"
+            width="80px"
+            class="rounded-full"
+          />
+        </div>
+        <div>
+          <ul class="flex">
+            <li class="pr-1"><a href="">Iniciar sesión</a></li>
+            <li><a href="">Registrarse</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <main>
-        <h1>La mejor panadería de Catamarca</h1>
-        <article>
-            <h2>Bienvenido a panaderia el Maná</h2>
-            <p>Ofrecemos una amplia variedad de productos de panificación y pastelería, todos hechos con los mejores
-                ingredientes y el amor de nuestros panaderos experimentados. Nuestro compromiso es brindarte siempre
-                productos frescos y de la más alta calidad</p>
+    <main class="marron-principal">
+      <article
+        class="flex items-center bg-[#ab9680] pl-3 pt-3 pr-3 min-h-[90vh]"
+      >
+        <div class="w-1/2 marron-oscuro rounded p-10">
+          <h2 class="text-black font-bold text-3xl text-center">
+            Bienvenido a panaderia el Maná
+          </h2>
+          <p class="text-black">
+            Ofrecemos una amplia variedad de productos de panificación y
+            pastelería, todos hechos con los mejores ingredientes y el amor de
+            nuestros panaderos experimentados. Nuestro compromiso es brindarte
+            siempre productos frescos y de la más alta calidad
+          </p>
+        </div>
+        <img src="img/panaderia-horno.jpg" alt="" class="w-1/2 rounded-lg" />
+      </article>
+      <h1 class="font-kindred py-12 text-3xl text-center">
+        La mejor panadería de Catamarca
+      </h1>
+      <h2 class="font-semibold text-xl mt-3 ml-5">
+        Nuestros exquisitos productos destacados
+      </h2>
+      <section class="flex">
+        <article class="card shadow-2xl">
+          <img src="img/medialunas.jpg" alt="Medialunas" class="w-50" />
+          <h3 class="m-4 text-center font-kindred text-xl">
+            Medialunas de manteca
+          </h3>
+          <p>
+            Las medialunas de manteca son uno de nuestros clásicos favoritos.
+            Están horneadas a la perfección con la mejor manteca. Son ideales
+            para acompañar un café o té, y siempre están frescas y listas para
+            disfrutar en cualquier momento del día.
+          </p>
+          <a href="#" class="underline">Más información</a>
         </article>
-        <section>
-            <h2>Nuestros exquisitos productos destacados</h2>
-            <article>
-                <img src="img/medialunas.jpg" alt="Medialunas" width="300px">
-                <h3>Medialunas de manteca</h3>
-                <p>Las medialunas de manteca son uno de nuestros clásicos favoritos. Están horneadas a la perfección con
-                    la mejor manteca.
-                    Son ideales para acompañar un café o té, y siempre están frescas y listas para disfrutar en
-                    cualquier momento del día.</p>
-                <a href="#">Más información</a>
-            </article>
-            <article>
-                <img src="img/baguette.jpg" alt="Baguette" width="300px">
-                <h3>Baguette</h3>
-                <p>Nuestra baguette es una delicia crujiente por fuera y tierna por dentro. Con una corteza dorada y un
-                    sabor auténtico, es perfecta para acompañar cualquier comida o para disfrutar sola. Hecha con
-                    ingredientes de la mejor calidad, es un clásico de la panadería que nunca pasa de moda.</p>
-                <a href="#">Más información</a>
-            </article>
-            <article>
-                <img src="img/budin.jpg" alt="Budín de chocolate" width="300px">
-                <h3>Budín de chocolate</h3>
-                <p>Nuestro budín de chocolate es una delicia irresistible, con una textura suave y esponjosa que se
-                    deshace en la boca. Hecho con cacao de alta calidad y trozos de chocolate, ofrece un sabor profundo
-                    y rico que complace a los amantes del chocolate. Ideal para disfrutar como postre o en cualquier
-                    momento que necesites un capricho dulce.</p>
-                <a href="#">Más información</a>
-            </article>
-        </section>
+        <article class="card shadow-2xl">
+          <img src="img/baguette.jpg" alt="Baguette" class="w-50" />
+          <h3 class="m-4 text-center font-kindred text-xl">Baguette</h3>
+          <p>
+            Nuestra baguette es una delicia crujiente por fuera y tierna por
+            dentro. Con una corteza dorada y un sabor auténtico, es perfecta
+            para acompañar cualquier comida o para disfrutar sola. Hecha con
+            ingredientes de la mejor calidad, es un clásico de la panadería que
+            nunca pasa de moda.
+          </p>
+          <a href="#" class="underline">Más información</a>
+        </article>
+        <article class="card shadow-2xl">
+          <img src="img/budin.jpg" alt="Budín de chocolate" class="w-50" />
+          <h3 class="m-4 text-center font-kindred text-xl">
+            Budín de chocolate
+          </h3>
+          <p>
+            Nuestro budín de chocolate es una delicia irresistible, con una
+            textura suave y esponjosa que se deshace en la boca. Hecho con cacao
+            de alta calidad y trozos de chocolate, ofrece un sabor profundo y
+            rico que complace a los amantes del chocolate.
+          </p>
+          <a href="#" class="underline">Más información</a>
+        </article>
+      </section>
     </main>
-    <footer>
-        <section>
-            <h2>Contacto</h2>
-            <p>Teléfono: 3834-123123</p>
-            <p>Correo electrónico: contactopanaderiaelmana@gmail.com</p>
-            <p>Dirección: Calle falsa 123, Catamarca, Argentina</p>
-        </section>
+    <footer class="marron-oscuro flex items-center py-2 justify-around">
+      <section>
+        <h2 class="font-semibold text-lg">Contacto</h2>
+        <div class="flex items-center">
+          <ion-icon name="call-outline" class="pr-2"></ion-icon>
+          <p>3834-123123</p>
+        </div>
+        <div class="flex items-center">
+          <ion-icon name="mail-outline" class="pr-2"></ion-icon>
+          <p>contactopanaderiaelmana@gmail.com</p>
+        </div>
+        <div class="flex items-center">
+          <ion-icon name="pin-outline" class="pr-2"></ion-icon>
+          <p>Calle falsa 123, Catamarca, Argentina</p>
+        </div>
+      </section>
 
-        <section>
-            <h2>Seguinos en nuestras redes</h2>
-            <ul>
-                <li><a href="#" target="_blank">Facebook</a></li>
-                <li><a href="#" target="_blank">Instagram</a></li>
-            </ul>
-        </section>
+      <section>
+        <h2 class="font-semibold text-lg">Seguinos en nuestras redes</h2>
+        <ul>
+          <li>
+            <a href="#" target="_blank">Facebook</a>
+            <ion-icon name="logo-facebook" class="align-middle p-2"></ion-icon>
+          </li>
+          <li>
+            <a href="#" target="_blank">Instagram</a
+            ><ion-icon
+              name="logo-instagram"
+              class="align-middle p-2"
+            ></ion-icon>
+          </li>
+        </ul>
+      </section>
 
-        <section>
-            <p>&copy; 2024 Panadería El Maná. Todos los derechos reservados.</p>
-        </section>
+      <section class="flex flex-col items-center">
+        <img src="/img/logo-marron-elmana-sinfondo.png" alt="" width="150px" />
+        <p>&copy; 2024 Panadería El Maná. Todos los derechos reservados.</p>
+      </section>
     </footer>
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
