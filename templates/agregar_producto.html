@@ -1,132 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Panadería el Maná</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/css/estilos.css" />
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
-  </head>
 
-  <body>
-    <header>
-      <nav
-        class="flex items-center justify-between px-1 py-1 pl-4 pr-4 text-white marron-oscuro font-lora"
-      >
-        <div>
-          <ul class="flex">
-            <li class="mr-3 hover:underline">
-              <a href="">Productos</a>
-            </li>
-            <li class="mr-3 hover:underline">
-              <a href="">Sobre nosotros</a>
-            </li>
-            <li class="mr-1 hover:underline">
-              <a href="">Contacto</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <a href="index.html">
-            <img
-              src="/img/logo-claro-elmana.png"
-              alt="logo de panadería el maná"
-              width="80px"
-              class="rounded-full"
-            />
-          </a>
-        </div>
-        <div>
-          <ul class="flex">
-            <li class="mr-3 hover:underline">
-              <a href="">Iniciar sesión</a>
-            </li>
-            <li class="hover:underline">
-              <a href="">Registrarse</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="bg-[#ebc68e] grid grid-rows-[auto-1fr-auto] min-h-screen">
-      <h3>Agregar un Producto</h3>
-      <form action="">
-        <fieldset>
-          <legend>Información del producto</legend>
-          <label for="nombre_producto">Nombre del producto:</label>
-          <input type="text" name="nombre_producto" />
-          <br />
-          <label for="id_producto">Identificación del producto:</label>
-          <input type="text" name="id_producto" />
-          <br />
-          <label for="categoria_producto"
-            >Seleccione la categoría del producto:</label
-          >
-          <select name="categoria_producto">
-            <option value="panificacion">Panificación</option>
-            <option value="pasteleria">Pastelería</option>
-          </select>
-          <br />
-          <label for="precio_producto">Precio del producto:</label>
-          <input type="number" name="precio_producto" min="1" />
-          <br />
-          <label for="stock_producto"
-            >Cantidad para la venta del producto:</label
-          >
-          <input type="number" name="stock_producto" />
-          <br />
-          <button type="submit">Enviar</button>
-          <button type="reset">Cancelar</button>
-        </fieldset>
-      </form>
-    </main>
-    <footer class="flex items-center justify-around py-2 marron-oscuro">
-      <section>
-        <h2 class="text-lg font-semibold">Contacto</h2>
-        <div class="flex items-center">
-          <ion-icon name="call-outline" class="pr-2"></ion-icon>
-          <p>3834-123123</p>
-        </div>
-        <div class="flex items-center">
-          <ion-icon name="mail-outline" class="pr-2"></ion-icon>
-          <p>contactopanaderiaelmana@gmail.com</p>
-        </div>
-        <div class="flex items-center">
-          <ion-icon name="pin-outline" class="pr-2"></ion-icon>
-          <p>Calle falsa 123, Catamarca, Argentina</p>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panadería el Maná</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/css/estilos.css" />
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+</head>
 
-      <section>
-        <h2 class="text-lg font-semibold">Seguinos en nuestras redes</h2>
-        <ul>
-          <li>
-            <a href="#" target="_blank">Facebook</a>
-            <ion-icon name="logo-facebook" class="p-2 align-middle"></ion-icon>
+<body>
+  <header>
+    <nav class="flex items-center justify-between px-1 py-1 pl-4 pr-4 text-white marron-oscuro font-lora">
+      <div>
+        <ul class="flex">
+          <li class="mr-3 hover:underline">
+            <a href="">Productos</a>
           </li>
-          <li>
-            <a href="#" target="_blank">Instagram</a
-            ><ion-icon
-              name="logo-instagram"
-              class="p-2 align-middle"
-            ></ion-icon>
+          <li class="mr-3 hover:underline">
+            <a href="">Sobre nosotros</a>
+          </li>
+          <li class="mr-1 hover:underline">
+            <a href="">Contacto</a>
           </li>
         </ul>
-      </section>
+      </div>
+      <div>
+        <a href="index.html">
+          <img src="/img/logo-claro-elmana.png" alt="logo de panadería el maná" width="80px" class="rounded-full" />
+        </a>
+      </div>
+      <div>
+        <ul class="flex">
+          <li class="mr-3 hover:underline">
+            <a href="">Iniciar sesión</a>
+          </li>
+          <li class="hover:underline">
+            <a href="">Registrarse</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="bg-[#ebc68e] flex justify-center items-center min-h-screen">
+    <div class="flex shadow w-full ml-12 mr-12">
+      <div
+        class="flex w-72 items-center justify-center bg-[url('../img/logo-marron-elmana.png')] bg-center bg-cover brightness-50 rounded-lg shadow">
+      </div>
+      <div class="w-full flex rounded-xl bg-amber-50 p-12">
+        <div class="w-72">
+          <h3 class="font-bold  text-xl text-stone-500 ">Agregar un Producto</h3>
+        </div>
 
-      <section class="flex flex-col items-center">
-        <img src="/img/logo-marron-elmana-sinfondo.png" alt="" width="150px" />
-        <p>&copy; 2024 Panadería El Maná. Todos los derechos reservados.</p>
-      </section>
-    </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+        <form class="flex flex-col justify-center items-center w-full" action="">
+          <fieldset class="text-amber-900 flex flex-col pt-8">
+            <div class="flex flex-col mt-2 mb-2 mt-2 mb-2">
+              <label class="font-bold text-amber-900" for="nombre_producto">Nombre del producto:</label>
+              <input type="text" class="input input-bordered w-full max-w-xs bg-amber-100 " />
+            </div>
+            <div class=" flex flex-col mt-2 mb-2">
+              <label class="font-bold text-amber-900" for="id_producto">Identificación del producto:</label>
+              <input class="input input-bordered w-full max-w-xs bg-amber-100" type="text" name="id_producto" />
+            </div>
+            <div class=" flex flex-col mt-2 mb-2">
+              <label class="font-bold text-amber-900 mb-2" for="categoria_producto">Seleccione la categoría del producto:</label>
+              
+              <select class="select select-ghost w-full max-w-xs bg-amber-100" name="categoria_producto">
+                <option disabled selected></option>
+                <option value="panificacion">Panificación</option>
+                <option value="pasteleria">Pastelería</option>
+              </select>
+            </div>
+            <div class=" flex flex-col mt-2 mb-2">
+              <label class="font-bold text-amber-900" for="precio_producto">Precio del producto:</label>
+              <input class="input input-bordered w-full max-w-xs bg-amber-100" type="number" name="precio_producto"
+                min="1" />
+            </div>
+            <div class=" flex flex-col mt-2 mb-2">
+              <label class="font-bold text-amber-900" for="stock_producto">Cantidad para la venta del producto:</label>
+              <input class="input input-bordered w-full max-w-xs bg-amber-100" type="number" name="stock_producto" />
+            </div>
+            
+          </fieldset>
+          <div class="flex mt-4 mb-4">
+            <button class="rounded-sm shadow pl-4 pr-4 font-bold bg-blue-400 hover:bg-blue-300" type="submit">Enviar</button>
+            <button class="rounded-sm shadow pl-4 pr-4 font-bold bg-red-400 hover:bg-red-300" type="reset">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="flex items-center justify-around py-2 marron-oscuro">
+    <section>
+      <h2 class="text-lg font-semibold">Contacto</h2>
+      <div class="flex items-center">
+        <ion-icon name="call-outline" class="pr-2"></ion-icon>
+        <p>3834-123123</p>
+      </div>
+      <div class="flex items-center">
+        <ion-icon name="mail-outline" class="pr-2"></ion-icon>
+        <p>contactopanaderiaelmana@gmail.com</p>
+      </div>
+      <div class="flex items-center">
+        <ion-icon name="pin-outline" class="pr-2"></ion-icon>
+        <p>Calle falsa 123, Catamarca, Argentina</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-lg font-semibold">Seguinos en nuestras redes</h2>
+      <ul>
+        <li>
+          <a href="#" target="_blank">Facebook</a>
+          <ion-icon name="logo-facebook" class="p-2 align-middle"></ion-icon>
+        </li>
+        <li>
+          <a href="#" target="_blank">Instagram</a><ion-icon name="logo-instagram" class="p-2 align-middle"></ion-icon>
+        </li>
+      </ul>
+    </section>
+
+    <section class="flex flex-col items-center">
+      <img src="/img/logo-marron-elmana-sinfondo.png" alt="" width="150px" />
+      <p>&copy; 2024 Panadería El Maná. Todos los derechos reservados.</p>
+    </section>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
