@@ -14,20 +14,20 @@
       <nav
         class="flex items-center justify-between px-1 py-1 pl-4 pr-4 text-white marron-oscuro font-lora"
       >
-        <div>
-          <ul class="flex">
-            <li class="pr-1">
+        <div class="flex-1">
+          <ul class="flex justify-start">
+            <li class="pr-3">
               <a href="" class="hover:underline">Productos</a>
             </li>
-            <li class="pr-1">
+            <li class="pr-3">
               <a href="" class="hover:underline">Sobre nosotros</a>
             </li>
-            <li class="pr-1">
+            <li class="pr-3">
               <a href="" class="hover:underline">Contacto</a>
             </li>
           </ul>
         </div>
-        <div>
+        <div class="flex-shrink-0">
           <a href="index.html">
             <img
               src="/img/logo-claro-elmana.png"
@@ -37,9 +37,9 @@
             />
           </a>
         </div>
-        <div>
-          <ul class="flex">
-            <li class="pr-1">
+        <div class="flex-1">
+          <ul class="flex justify-end">
+            <li class="pr-3">
               <a href="" class="hover:underline">Iniciar sesión</a>
             </li>
             <li><a href="" class="hover:underline">Registrarse</a></li>
@@ -51,9 +51,9 @@
       <article
         class="flex items-center bg-[#ebc68e] pl-3 pt-3 pr-3 min-h-[90vh]"
       >
-        <div class="w-1/2 p-10 rounded">
-          <h2 class="text-3xl font-bold text-center text-black">
-            Bienvenido a panaderia el Maná
+        <div class="flex flex-col justify-between w-1/2 h-full px-10">
+          <h2 class="mb-5 text-3xl font-bold text-center text-black">
+            Bienvenido a panaderia El Maná
           </h2>
           <p class="text-black">
             Ofrecemos una amplia variedad de productos de panificación y
@@ -61,13 +61,23 @@
             nuestros panaderos experimentados. Nuestro compromiso es brindarte
             siempre productos frescos y de la más alta calidad
           </p>
+          <ul class="mt-5 mb-4 text-black list-none list-inside">
+            <li class="flex items-center"><ion-icon name="chevron-forward-outline"></ion-icon>Pan recién horneado todos los días</li>
+            <li class="flex items-center"><ion-icon name="chevron-forward-outline"></ion-icon>Las mejores tartas de la ciudad</li>
+            <li class="flex items-center"><ion-icon name="chevron-forward-outline"></ion-icon>Ingredientes naturales y frescos</li>
+          </ul>
+          <a href="#productos" class="px-12 py-3 mt-10 text-sm text-center font-bold text-[#8b563b] border border-[#8b563b] rounded hover:bg-[#8b563b] hover:text-white focus:outline-none active:bg-[#ab9680]">
+            Conoce nuestros productos
+          </a>
         </div>
+        </div>
+        
         <img src="/img/panaderia-horno.jpg" alt="" class="w-1/2 rounded-lg" />
       </article>
-      <h1 class="py-12 text-3xl text-center font-kindred">
+      <h1 class="py-12 text-3xl text-center font-kindred" id="productos">
         La mejor panadería de Catamarca
       </h1>
-      <h2 class="mt-3 ml-5 text-xl font-semibold">
+      <h2 class="mt-3 ml-5 text-xl font-semibold" >
         Nuestros exquisitos productos destacados
       </h2>
       <section class="flex text-black">

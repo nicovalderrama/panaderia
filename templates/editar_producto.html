@@ -49,37 +49,98 @@
         </div>
       </nav>
     </header>
-    <main class="bg-[#ebc68e] grid grid-rows-[auto-1fr-auto] min-h-screen">
-      <h3>Editar un Producto</h3>
-      <form action="">
-        <fieldset>
-          <legend>Información del producto</legend>
-          <label for="nombre_producto">Nombre del producto:</label>
-          <input type="text" name="nombre_producto" disabled />
-          <br />
-          <label for="id_producto">Identificación del producto:</label>
-          <input type="text" name="id_producto" disabled />
-          <br />
-          <label for="categoria_producto"
-            >Seleccione la categoría del producto:</label
+    <main class="bg-[#ebc68e] flex justify-center items-center min-h-screen">
+      <div class="flex w-full ml-12 mr-12 shadow">
+        <div
+          class="flex w-[32rem] items-center justify-center bg-[url('../img/logo-marron-elmana.png')] bg-center bg-cover brightness-50 rounded-lg shadow"
+        ></div>
+        <div class="flex w-full p-12 rounded-xl bg-amber-50">
+          <div class="w-72">
+            <h3 class="text-xl font-bold text-stone-500">Editar un Producto</h3>
+          </div>
+
+          <form
+            class="flex flex-col items-center justify-center w-full"
+            action=""
           >
-          <select name="categoria_producto">
-            <option value="panificacion">Panificación</option>
-            <option value="pasteleria">Pastelería</option>
-          </select>
-          <br />
-          <label for="precio_producto">Precio del producto:</label>
-          <input type="number" name="precio_producto" min="1" />
-          <br />
-          <label for="stock_producto"
-            >Cantidad para la venta del producto:</label
-          >
-          <input type="number" name="stock_producto" />
-          <br />
-          <button type="submit">Enviar</button>
-          <button type="reset">Cancelar</button>
-        </fieldset>
-      </form>
+            <fieldset class="flex flex-col pt-8 text-amber-900">
+              <div class="flex flex-col mt-2 mb-2">
+                <label class="font-bold text-amber-900" for="nombre_producto"
+                  >Nombre del producto:</label
+                >
+                <input
+                  type="text"
+                  class="w-full max-w-xs input input-bordered bg-amber-100"
+                  disabled
+                />
+              </div>
+              <div class="flex flex-col mt-2 mb-2">
+                <label class="font-bold text-amber-900" for="id_producto"
+                  >Identificación del producto:</label
+                >
+                <input
+                  class="w-full max-w-xs input input-bordered bg-amber-100"
+                  type="text"
+                  name="id_producto"
+                  disabled
+                />
+              </div>
+              <div class="flex flex-col mt-2 mb-2">
+                <label
+                  class="mb-2 font-bold text-amber-900"
+                  for="categoria_producto"
+                  >Seleccione la categoría del producto:</label
+                >
+
+                <select
+                  class="w-full max-w-xs select select-ghost bg-amber-100"
+                  name="categoria_producto"
+                  disabled
+                >
+                  <option disabled selected></option>
+                  <option value="panificacion">Panificación</option>
+                  <option value="pasteleria">Pastelería</option>
+                </select>
+              </div>
+              <div class="flex flex-col mt-2 mb-2">
+                <label class="font-bold text-amber-900" for="precio_producto"
+                  >Precio del producto:</label
+                >
+                <input
+                  class="w-full max-w-xs input input-bordered bg-amber-100"
+                  type="number"
+                  name="precio_producto"
+                  min="1"
+                />
+              </div>
+              <div class="flex flex-col mt-2 mb-2">
+                <label class="font-bold text-amber-900" for="stock_producto"
+                  >Cantidad para la venta del producto:</label
+                >
+                <input
+                  class="w-full max-w-xs input input-bordered bg-amber-100"
+                  type="number"
+                  name="stock_producto"
+                />
+              </div>
+            </fieldset>
+            <div class="flex mt-4 mb-4">
+              <button
+                class="px-3 py-1 mr-3 text-[#5c3826] border border-[#5c3826] rounded hover:bg-[#5c3826] hover:text-white"
+                type="reset"
+              >
+                Cancelar
+              </button>
+              <button
+                class="px-3 py-1 text-white border rounded marron-principal hover:bg-[#5c3826]"
+                type="submit"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </main>
     <footer class="flex items-center justify-around py-2 marron-oscuro">
       <section>

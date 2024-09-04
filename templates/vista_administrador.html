@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panadería el Maná</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/estilos.css" />
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+  </head>
+  <body
+    class="min-h-screen grid grid-rows-[auto_1fr_auto] grid-cols-[250px_1fr]"
+  >
+    <header class="col-span-2">
+      <nav
+        class="flex items-center justify-between px-1 py-1 pl-4 pr-4 text-white marron-oscuro font-lora"
+      >
+        <div class="flex-1">
+          <ul class="flex justify-start">
+            <li class="mr-3 hover:underline">
+              <a href="">Productos</a>
+            </li>
+            <li class="mr-3 hover:underline">
+              <a href="">Sobre nosotros</a>
+            </li>
+            <li class="mr-1 hover:underline">
+              <a href="">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-shrink-0">
+          <a href="index.html">
+            <img
+              src="/img/logo-claro-elmana.png"
+              alt="logo de panadería el maná"
+              width="80px"
+              class="rounded-full"
+            />
+          </a>
+        </div>
+        <div class="flex-1">
+          <ul class="flex justify-end">
+            <li class="mr-3 hover:underline">
+              <a href="" class="text-3xl"
+                ><ion-icon name="log-out-outline"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <aside class="row-span-2 bg-[#735945]">
+      <div class="flex flex-col justify-between h-full bg-[#735945] border-e">
+        <div class="flex-grow px-4 py-6">
+          <span class="grid w-32 h-10 mx-auto text-xs place-content-center">
+            <img src="/img/logo-marron-elmana-sinfondo.png" alt="" />
+          </span>
+
+          <ul class="mt-6 space-y-1">
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm font-medium bg-[#ebc68e] text-gray-700 rounded-lg"
+              >
+                General
+              </a>
+            </li>
+
+            <li>
+              <details class="group [&_summary::-webkit-details-marker]:hidden">
+                <summary
+                  class="flex items-center justify-between px-4 py-2 rounded-lg cursor-pointer hover:bg-[#ebc68e] hover:text-gray-700"
+                >
+                  <span class="text-sm font-medium"> Productos </span>
+
+                  <span
+                    class="transition duration-300 shrink-0 group-open:-rotate-180"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="size-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </summary>
+
+                <ul class="px-4 mt-2 space-y-1">
+                  <li>
+                    <a
+                      href="gestion_productos.html"
+                      class="block px-4 py-2 text-sm font-medium rounded-lg hover:bg-[#ebc68e] hover:text-gray-700"
+                    >
+                      Gestionar productos
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="agregar_producto.html"
+                      class="block px-4 py-2 text-sm font-medium rounded-lg hover:bg-[#ebc68e] hover:text-gray-700"
+                    >
+                      Agregar producto
+                    </a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm font-medium rounded-lg hover:bg-[#ebc68e] hover:text-gray-700"
+              >
+                Inventario
+              </a>
+            </li>
+
+            <li>
+              <details class="group [&_summary::-webkit-details-marker]:hidden">
+                <summary
+                  class="flex items-center justify-between px-4 py-2 rounded-lg cursor-pointer hover:bg-[#ebc68e] hover:text-gray-700"
+                >
+                  <span class="text-sm font-medium"> Proveedores </span>
+
+                  <span
+                    class="transition duration-300 shrink-0 group-open:-rotate-180"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="size-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </summary>
+
+                <ul class="px-4 mt-2 space-y-1">
+                  <li>
+                    <a
+                      href="gestion_productos.html"
+                      class="block px-4 py-2 text-sm font-medium rounded-lg hover:bg-[#ebc68e] hover:text-gray-700"
+                    >
+                      Realizar pedido
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="agregar_producto.html"
+                      class="block px-4 py-2 text-sm font-medium rounded-lg hover:bg-[#ebc68e] hover:text-gray-700"
+                    >
+                      Registrar pedido
+                    </a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details class="group [&_summary::-webkit-details-marker]:hidden">
+                <summary
+                  class="flex items-center justify-between px-4 py-2 rounded-lg cursor-pointer hover:bg-[#ebc68e] hover:text-gray-700"
+                >
+                  <span class="text-sm font-medium"> Cuenta </span>
+
+                  <span
+                    class="transition duration-300 shrink-0 group-open:-rotate-180"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="size-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </summary>
+
+                <ul class="px-4 mt-2 space-y-1">
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm font-medium rounded-lg hover:bg-[#ebc68e] hover:text-gray-700"
+                    >
+                      Mi información
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm font-medium rounded-lg hover:bg-[#ebc68e] hover:text-gray-700"
+                    >
+                      Securidad
+                    </a>
+                  </li>
+
+                  <li>
+                    <form action="#">
+                      <button
+                        type="submit"
+                        class="w-full rounded-lg px-4 py-2 text-sm font-medium [text-align:_inherit] hover:bg-[#ebc68e] hover:text-gray-700"
+                      >
+                        Cerrar sesión
+                      </button>
+                    </form>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sticky inset-x-0 bottom-0 border-t border-black-500">
+          <a href="#" class="flex items-center gap-2 p-4 bg-[#8b563b]">
+            <img
+              alt=""
+              src="/img/user.png"
+              class="object-cover rounded-full size-10"
+            />
+
+            <div>
+              <p class="text-xs">
+                <strong class="block font-medium">Nicolás Valderrama</strong>
+
+                <span> nico@elmana.com </span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </aside>
+    <main class="p-10 text-slate-900 bg-[#ebc68e] min-h-[90vh]">
+      <h1 class="mb-4 text-2xl font-bold">Bienvenido, Nicolás</h1>
+      <p class="mb-6">
+        Acá podes gestionar tu cuenta, ver tus pedidos y mucho más.
+      </p>
+
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <a
+          href="#"
+          class="block p-4 border border-black rounded-lg hover:bg-[#735945] hover:text-white"
+        >
+          <h2 class="text-lg font-semibold">Mis Pedidos</h2>
+          <p class="text-sm">Revisa el estado de tus pedidos recientes.</p>
+        </a>
+        <a
+          href="#"
+          class="block p-4 border border-black rounded-lg hover:bg-[#735945] hover:text-white"
+        >
+          <h2 class="text-lg font-semibold">Mi Perfil</h2>
+          <p class="text-sm">Actualiza tu información personal.</p>
+        </a>
+        <a
+          href="#"
+          class="block p-4 border border-black rounded-lg hover:bg-[#735945] hover:text-white"
+        >
+          <h2 class="text-lg font-semibold">Métodos de Pago</h2>
+          <p class="text-sm">Gestiona tus métodos de pago.</p>
+        </a>
+        <a
+          href="#"
+          class="block p-4 border border-black rounded-lg hover:bg-[#735945] hover:text-white"
+        >
+          <h2 class="text-lg font-semibold">Direcciones de Envío</h2>
+          <p class="text-sm">Añade o edita tus direcciones de envío.</p>
+        </a>
+        <a
+          href="#"
+          class="block p-4 text-white bg-red-500 border border-red-600 rounded-lg"
+        >
+          <h2 class="text-lg font-semibold">Productos sin Stock</h2>
+          <p class="text-sm">
+            Algunos productos están sin stock o están por agotarse.
+          </p>
+          <button
+            class="px-4 py-2 mt-2 text-white bg-red-600 rounded hover:bg-red-700"
+          >
+            Realizar Pedido
+          </button>
+        </a>
+        <a
+          href="#"
+          class="block p-4 border border-black rounded-lg hover:bg-[#735945] hover:text-white"
+        >
+          <h2 class="text-lg font-semibold">Productos más Vendidos</h2>
+          <p class="text-sm">
+            Revisa los productos más populares de la panadería.
+          </p>
+        </a>
+      </div>
+    </main>
+    <footer class="flex items-center justify-around py-2 marron-oscuro">
+      <section>
+        <h2 class="text-lg font-semibold">Contacto</h2>
+        <div class="flex items-center">
+          <ion-icon name="call-outline" class="pr-2"></ion-icon>
+          <p>3834-123123</p>
+        </div>
+        <div class="flex items-center">
+          <ion-icon name="mail-outline" class="pr-2"></ion-icon>
+          <p>contactopanaderiaelmana@gmail.com</p>
+        </div>
+        <div class="flex items-center">
+          <ion-icon name="pin-outline" class="pr-2"></ion-icon>
+          <p>Calle falsa 123, Catamarca, Argentina</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold">Seguinos en nuestras redes</h2>
+        <ul>
+          <li>
+            <a href="#" target="_blank">Facebook</a>
+            <ion-icon name="logo-facebook" class="p-2 align-middle"></ion-icon>
+          </li>
+          <li>
+            <a href="#" target="_blank">Instagram</a
+            ><ion-icon
+              name="logo-instagram"
+              class="p-2 align-middle"
+            ></ion-icon>
+          </li>
+        </ul>
+      </section>
+
+      <section class="flex flex-col items-center">
+        <img src="/img/logo-marron-elmana-sinfondo.png" alt="" width="150px" />
+        <p>&copy; 2024 Panadería El Maná. Todos los derechos reservados.</p>
+      </section>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
